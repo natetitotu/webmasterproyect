@@ -1,0 +1,59 @@
+*{margin: 0;padding: 0}
+
+html{
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 16px;
+}
+@keyframes opacidad{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes desplazamiento{
+	0%{
+		transform: translateY(-600px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+	#contenedor{
+		background-color: #ffffff;
+		width:50%; 
+		padding:10px;
+		margin-left: auto;
+		margin-right: auto;
+		border:3px solid rgb(200,20,20);
+		animation-name: opacidad, desplazamiento;
+		animation-duration: 5s, 5s;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+		}
+		h1{
+			margin:0;
+			padding: 0;
+			color: #ff0000;
+			}
+		.cajas{
+			border:1px solid black;
+			padding: 10px;
+			margin-top: 10px;
+			}
+			.cajas h3{
+				text-align: left;
+				text-transform: uppercase;
+				font-family: "Georgia","Times", serif;
+				font-size: 20px;
+				text-decoration: underline; /* subrayado*/
+				font-weight: normal; /* negrita, gruesa o normal */
+				font-style: italic; /* cursiva */
+				}
+				p{
+					color: red;
+					text-align: justify;
+					letter-spacing: 1px;
+					line-height: 28px
+				}

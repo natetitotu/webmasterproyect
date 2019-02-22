@@ -1,0 +1,51 @@
+/* definimos las animaciones */
+@keyframes anim1{
+	0%{
+		color: black;
+		transform: translate(0px);
+	}
+	50%{
+		color: aqua;
+		transform: translate(30%);
+	}
+	100%{
+		color: lightgreen;
+		transform: translate(0px);
+	}
+}
+@keyframes opacidad{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/* transitions.css */
+div{
+	height: 200px;
+	width: 200px;
+	background-color: lightblue;
+	margin: 50px auto;
+}
+.uno{
+	transition: 1s 0s all ease;
+}
+.uno:hover{
+	background-color: blue;
+	border-radius: 100px;
+}
+.dos{
+	transition: 1s all ease;
+}
+.dos:hover{
+	transform: rotate(1turn) scale(1.2,1.2);
+}
+h1{
+	animation-name: anim1, opacidad;
+	animation-duration: 3s, 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	/*animation-direction: alternate;*/
+}
